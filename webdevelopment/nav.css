@@ -1,0 +1,27 @@
+nav ul {
+    margin: 0;
+    padding: 0;
+    font: serif;
+}
+
+.nav {
+    background-color: #ff96d5fa;
+    color: aqua
+    list-style: none;
+    text-align: left;
+    padding:  0;
+   
+}
+
+.nav > li{ 
+    display:block;
+    padding: 0px;
+}
+
+.nav > li > a {
+    color: rgb(21, 22, 22);
+}
+
+.nav > li > a: hover {
+    color : #clclcl
+}
