@@ -1,0 +1,20 @@
+#head1 {color: #eb3a92}
+#head2 {color :#e63c91}
+
+
+.reflection p:first-of-type::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(186, 100%, 16%);
+    font: cursive;
+}
+
+.reflection p:not(:first-of-type){
+ text-indent: 2em;
+}
+
+.reflection {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #c6eaf9;
+}
