@@ -64,7 +64,7 @@
   
 
   .image-box {
-   width: 250px;              
+   width: 250px;              /* fixed square size */
   height: 250px;
   background-color: #faa8d1;
   padding: 10px;
@@ -72,11 +72,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px auto;
-  }
+  box-sizing: border-box;
   
   .image-box img {
-    max-width: 90%%;
+    max-width: 90%;
     height: auto;
     border-radius: 10px;
     display:block;
