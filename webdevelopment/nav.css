@@ -58,46 +58,48 @@
 }
 
 
+./* Hide checkbox (control for hamburger) */
 #menu-toggle {
-  display: none;
-}
-
-
-.hamburger {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  padding: 10px;
-  background-color: #eee;
-  margin: 10px;
-}
-
-
-@media screen and (max-width: 768px) {
-  .hamburger {
-    display: block; /* Show hamburger */
-  }
-
-  .nav1 {
-    display: none; /* Hide full menu on mobile */
-    flex-direction: column;
-    background-color: #f9f9f9;
-    padding: 0;
-  }
-
-  
-  #menu-toggle:checked + .hamburger + nav .nav1 {
-    display: flex;
-  }
-
-
-  .mobile-hide {
     display: none;
   }
-
-  .nav1 li {
-    list-style: none;
+  
+  /* Hamburger icon - only appears on small screens */
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    background-color: #ffc8eb;
+    margin: 10px;
   }
-}
+  
+  /* Apply mobile styles */
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: block; /* Show hamburger */
+    }
+  
+    .nav1 {
+      display: none; /* Hide full menu on mobile */
+      flex-direction: column;
+      background-color: #f9f9f9;
+      padding: 0;
+    }
+  
+    /* When checkbox is checked, show menu */
+    #menu-toggle:checked + .hamburger + nav .nav1 {
+      display: flex;
+    }
+  
+    /* Hide dropdown list on mobile */
+    .mobile-hide {
+      display: none;
+    }
+  
+    .nav1 li {
+      list-style: none;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  
