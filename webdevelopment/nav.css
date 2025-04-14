@@ -57,6 +57,10 @@
  background-color: #2a1f22;
 }
 
+  #menu-toggle {
+    display: none;
+  }
+
 .hamburger {
     display: none;
     font-size: 30px;
@@ -66,15 +70,13 @@
     margin: 10px;
   }
   
-  #menu-toggle {
-    display: none;
-  }
-  
-
- 
+  @media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+      
 @media screen and (max-width: 768px) {
   .nav1 {
-    display: none; /* <--- this hides the menu on phones */
+    display: none;
     flex-direction: column;
     background-color: #f9f9f9;
     padding: 0;
@@ -87,15 +89,14 @@
 }
 
   
-    .nav1 li {
-      list-style: none;
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
-    }
-  
-
     .mobile-hide {
       display: none;
     }
   }
+
+.nav1 li {
+      list-style: none;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
   
