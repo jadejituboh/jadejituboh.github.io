@@ -64,20 +64,22 @@
   
 
   .image-box {
-    height: 60%;
-    width: 20%;
-    background-color: #faa8d1;
-    padding: 10px;
-    border:3px #c6eaf9;
-    border-radius: 20px;
+   width: 250px;              
+  height: 250px;
+  background-color: #faa8d1;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
   }
   
   .image-box img {
-    max-width: 80%%;
+    max-width: 90%%;
     height: auto;
     border-radius: 10px;
     display:block;
-    margin: 0 auto;
   }
 
 #horizontal-maker{
