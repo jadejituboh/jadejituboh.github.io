@@ -1,6 +1,4 @@
-.nav {
 
-}
 
 
 .nav1 {
@@ -58,8 +56,8 @@
 }
 
 
-./* Hide checkbox (control for hamburger) */
-#menu-toggle {
+/* Hide checkbox (control for hamburger) */
+.menu-toggle {
     display: none;
   }
   
