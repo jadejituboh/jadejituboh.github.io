@@ -58,8 +58,17 @@ textarea{
 
 footer{
     text-align: center;
+    background-color: #ead9e3fa;
 
 }
+p{
+    text-align: center;
+}
+.iframeBox{
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (max-width:959px){
       #container{
         width:100%;
@@ -137,5 +146,26 @@ footer{
     .image-box {
       margin-top: 20px;
     }
-  }
   
+}
+@media print{
+    @page {
+        margin:1in;
+    }
+    p{
+        color:black;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    h1{
+        color:black;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    footer{
+        background-color: #faa8d1;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+}  
