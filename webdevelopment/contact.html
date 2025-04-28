@@ -19,18 +19,54 @@ Tested:  02/16/2024
 -->
                <meta charset="utf-8">
                <title>Web Page Sample</title>
-</head>
-<body>
-        <form action>
-
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" placeholder="First Name please">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             
-            <textarea id="" name="" placeholder="Please type your inquires here" style="height:300px">
+            
+                
+                <link rel="stylesheet" type="text/css" href="nav.css">  
+                <link rel="stylesheet" type="text/css" href="style.css">     
+</head>
+<body class="">
+    <nav> 
+        <ul class="nav1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Project/Learn</a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li><a href="contact.html">Contact</a></li>
+    </ul> 
+    </nav>
+    <h1 class="contact"> Contact Form</h1>
+    <div class="bawdy">
+       
+        <form class="formForm" action="mailto:someone@example.com?subject=Professional" method="post" enctype="text/plain">
+            <div class ="formF">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name please" required>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastNaME" placeholder="LAST Name please" required>
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Phone Number please" required>
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="Email" placeholder="Email Address please" required>
+                <label for="LinkedIN">LinkedIN</label>
+                <input type="text" id="LinkedIN" name="LinkedIN" placeholder="LinkedIN please"required>
+            </div>
+          
+            
+
+            <textarea class="Message" name="" placeholder="Please type your inquires here" style="height:300px">
 
             </textarea>
              <input type="submit" value="Submit">
         </form>
+    </div>
 
     
         <footer>
