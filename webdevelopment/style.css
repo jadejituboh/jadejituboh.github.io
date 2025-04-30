@@ -73,6 +73,7 @@ th, td{
 table{
     margin:0 auto;
     width: 50%;
+     border: 2px solid black; 
 }
 caption{
     padding: 10px;
@@ -90,6 +91,17 @@ tbody tr:nth-child(odd){
 tbody tr:nth-child(even){
     background-color: white;
 }
+.table-responsive {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.table-responsive table {
+    width: 100%;
+    min-width: 600px; /* adjust as needed */
+    border-collapse: collapse;
+}
+
 
 @media screen and (max-width:959px){
       #container{
