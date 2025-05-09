@@ -1,76 +1,79 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    
-    <link rel="stylesheet" type="text/css" href="nav.css">  
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com ">
 
 <!--
+Title: About Page
 
-Title: ABout Page
-
-Use:  to start creating homepage
+Use: to create homepage
 
 Author: Jade J
 
-School/Term:  University of MIssouri, Columbia
+School/Term: University of Missouri, Columbia
 
 Developed: 02/16/2024
 
 Tested:  02/16/2024
-
 -->
-               <meta charset="utf-8">
-               <title>Web Page Sample</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Web Page Sample</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        
+  <link rel="stylesheet" type="text/css" href="nav.css">  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com">
+
 </head>
 
 <body>
-    <header>
-         <h1 id="head1">Hello there and Welcome to my Website! </h1>
-    </header>
 
-<label for="menu-toggle" class="hamburger">&#9776;</label>
-   
-    <nav> 
-        <ul id="nav-menu" class="nav1">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Project/Learn</a>
-                <ul class="mobile-hide">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                    </ul>
-            </li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul> 
-    </nav>
+  <header>
+    <h1 id="head1">Hello there and Welcome to my Website!</h1>
+  </header>
 
-    
-    <div id="container">
-    <p>My name is Jade Jituboh-Aluyi. I am a junior in the university of Missouri majoring in Chemical Engineering.</p>
+  <div class="nav-container">
+  <!-- ✅ Hamburger + Checkbox -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="hamburger">&#9776;</label>
 
-    <main>
-        
-        <p>This website is dedicated to showing my experiences, relevant coursework, and personal projects that are relevant to my major</p>
-        <p>My goals are to document my professional journey in Chemical Engineering and Engineering as a whole as I progress in my career and reach various milestones. I would also
-        like to create a platform for networking with companies and like-minded individuals.</p>
-    </div>
-    <div class="iframeBox">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ks3_kuRAzHs?si=SPMT2ss7cd3IJUHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    </main>
-        <footer>
-            <p>&copy; Jade Jituboh-Aluyi | <a href="mailto:hege@example.com">jjjc7c@umsystem.edu</a></p>
-        </footer>
+
+  <!-- ✅ Navigation -->
+  <nav> 
+    <ul class="nav1">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Project/Learn</a>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul> 
+</nav>
+</div>
+
+
+  <!-- ✅ Main Content Layout -->
+  <div id="container">
+    <p>My name is Jade Jituboh-Aluyi. I am a junior in the University of Missouri majoring in Chemical Engineering.</p>
+  </div>
+
+  <main>
+    <p>This website is dedicated to showing my experiences, relevant coursework, and personal projects that are relevant to my major.</p>
+    <p>My goals are to document my professional journey in Chemical Engineering and Engineering as a whole as I progress in my career and reach various milestones. I would also like to create a platform for networking with companies and like-minded individuals.</p>
+  </main>
+
+  <div class="iframeBox">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ks3_kuRAzHs?si=SPMT2ss7cd3IJUHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    <p>&copy; Jade Jituboh-Aluyi | <a href="mailto:jjjc7c@umsystem.edu">jjjc7c@umsystem.edu</a></p>
+  </footer>
 
 </body>
-
-
 </html>
