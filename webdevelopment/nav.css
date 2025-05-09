@@ -1,64 +1,67 @@
-
-
-
 .nav1 {
     background-color: #ead9e3fa;
     color: aqua;
     list-style: none;
     text-align: left;
-    padding:  0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     font: serif;
-   
-}
-
-.nav1 > li { 
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .nav1 > li {
     position: relative;
-    display:block;
-    padding: 0px;
-}
-
-.nav1 li  a {
     display: block;
-    padding:10px;
+    padding: 0px;
+  }
+  
+  .nav1 li a {
+    display: block;
+    padding: 10px;
     color: rgb(120, 199, 255);
-}
-
-
-.nav1 a:hover,
-.nav1 a:focus {
-    color:rgb(164, 208, 246);
+  }
+  
+  .nav1 a:hover,
+  .nav1 a:focus {
+    color: rgb(164, 208, 246);
     background-color: #feabd2;
-}
-
-.nav1 li ul {
+  }
+  
+  .nav1 li ul {
     display: none;
     position: relative;
     left: 0;
-    top: 100;
+    top: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
     background-color: #faa8d1;
-    
-}
-
-.nav1 li:hover > ul  {
+  }
+  
+  .nav1 li:hover > ul {
     display: block;
-   }
-
-.nav1 li ul li a {
-   color: white;
-   padding: 0px;
-}
-.nav1 li ul li a:hover  {
- background-color: #2a1f22;
-}
-
-
-/* Hide checkbox (control for hamburger) */
-.menu-toggle {
+  }
+  
+  .nav1 li ul li a {
+    color: rgb(234, 21, 21);
+    padding: 10px;
+  }
+  
+  .nav1 li ul li a:hover {
+    background-color: #2a1f22;
+  }
+  
+  /* Navigation container to properly position elements */
+  .nav-container {
+    position: relative;
+  }
+  
+  /* Hide checkbox (control for hamburger) */
+  .menu-toggle {
     display: none;
+    visibility: hidden;
   }
   
   /* Hamburger icon - only appears on small screens */
@@ -76,28 +79,33 @@
     .hamburger {
       display: block; /* Show hamburger */
     }
-  
+    
     .nav1 {
       display: none; /* Hide full menu on mobile */
       flex-direction: column;
-      background-color: #f9f9f9;
+      background-color: #71ffba;
       padding: 0;
     }
-  
-    /* When checkbox is checked, show menu */
-    #menu-toggle:checked + .hamburger + nav .nav1 {
+    
+    /* The crucial fix: When checkbox is checked, show menu */
+    #menu-toggle:checked ~ nav .nav1 {
       display: flex;
+      flex-direction: column;
     }
-  
+    
+    /* Mobile styles for nav items */
+    .nav1 li {
+      list-style: none;
+      padding: 10px;
+      border-bottom: 1px solid #0c0404;
+    }
+    
+    .nav1 li ul {
+      position: static;
+    }
+    
     /* Hide dropdown list on mobile */
     .mobile-hide {
       display: none;
     }
-  
-    .nav1 li {
-      list-style: none;
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
-    }
   }
-  
