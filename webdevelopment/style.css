@@ -91,6 +91,7 @@ tbody tr:nth-child(odd){
 tbody tr:nth-child(even){
     background-color: white;
 }
+
 .table-responsive {
     overflow-x: auto;
     width: 100%;
@@ -135,12 +136,12 @@ tbody tr:nth-child(even){
         padding: 10px;
     }
 
-    #nav-menu {
+    .nav1 {
         display: none;
     }
 
    
-    #menu-toggle:checked + nav #nav-menu {
+    #menu-toggle:checked + nav .nav1 {
         display: flex;
         flex-direction: column;
     }
@@ -152,51 +153,136 @@ tbody tr:nth-child(even){
 }
 
 .content-container {
-    width: 20%;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    padding: 20px;
-
+ display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
   }
+  
   
 
   .image-box {
-    height: 40%;
-    width: 50%;
+    height: auto;
+    max-width: 400px;
     background-color: #faa8d1;
     padding: 10px;
-    border:3px #c6eaf9;
+    border:3px solid #c6eaf9;
     border-radius: 20px;
   }
   
   .image-box img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
     border-radius: 10px;
-    display:block;
+    border: 3px solid #c6eaf9;
+    background-color: #faa8d1;
   }
+
 #horizontal-maker{
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    
 }
 
   .bio {
-    flex: 2
+    flex: 1;
+    max-width: 700px;
   }
+
+  /* Contact Page Styles */
+.contact {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2em;
+  }
+  
+  .bawdy {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .formForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .formF {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Make inputs and textareas consistent and responsive */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+  }
+  
+  /* Submit button styling */
+  input[type="submit"] {
+    background-color: #eb3a92;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #c92776;
+  }
+  
+  /* Responsive layout for mobile */
+  @media screen and (max-width: 768px) {
+    .bawdy {
+      padding: 10px;
+    }
+  
+    .formForm {
+      padding: 10px;
+    }
+  
+    .contact {
+      font-size: 1.5em;
+    }
+  }
+  
   
   /* Stack on smaller screens */
   @media (max-width: 768px) {
     .content-container {
       flex-direction: column;
+      align-items: center;
     }
   
     .image-box {
-      margin-top: 20px;
+      margin-top: 90px;
     }
-  
+
+    .bio {
+        padding: 0 15px;
+      }
+
 }
 
 @media print{
