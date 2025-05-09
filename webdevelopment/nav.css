@@ -53,18 +53,17 @@
     background-color: #2a1f22;
   }
   
-  /* Navigation container to properly position elements */
+ 
   .nav-container {
     position: relative;
   }
   
-  /* Hide checkbox (control for hamburger) */
   .menu-toggle {
     display: none;
     visibility: hidden;
   }
   
-  /* Hamburger icon - only appears on small screens */
+ 
   .hamburger {
     display: none;
     font-size: 30px;
@@ -74,26 +73,26 @@
     margin: 10px;
   }
   
-  /* Apply mobile styles */
+
   @media screen and (max-width: 768px) {
     .hamburger {
-      display: block; /* Show hamburger */
+      display: block; 
     }
     
     .nav1 {
-      display: none; /* Hide full menu on mobile */
+      display: none; 
       flex-direction: column;
       background-color: #71ffba;
       padding: 0;
     }
     
-    /* The crucial fix: When checkbox is checked, show menu */
+    
     #menu-toggle:checked ~ nav .nav1 {
       display: flex;
       flex-direction: column;
     }
     
-    /* Mobile styles for nav items */
+  
     .nav1 li {
       list-style: none;
       padding: 10px;
@@ -104,7 +103,7 @@
       position: static;
     }
     
-    /* Hide dropdown list on mobile */
+    
     .mobile-hide {
       display: none;
     }
