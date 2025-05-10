@@ -315,3 +315,12 @@ tbody tr:nth-child(even){
 .footer-icon:hover {
   transform: scale(1.2);
 }
+
+footer {
+  text-align: center;
+  background-image: url("footer-background.jpg"); /* 👈 relative link */
+  background-size: cover;
+  background-position: center;
+  color: white; /* Optional: make text readable */
+  padding: 20px;
+}
