@@ -83,5 +83,14 @@ Tested:  02/16/2024
     <p>&copy; Jade Jituboh-Aluyi | <a href="mailto:jjjc7c@umsystem.edu">jjjc7c@umsystem.edu</a></p>
   </footer>
 
+<script>
+    if (!localStorage.pagecount) {
+      localStorage.pagecount = 1;
+    } else {
+      localStorage.pagecount = Number(localStorage.pagecount) + 1;
+    }
+    document.getElementById("visit-count").textContent = localStorage.pagecount;
+  </script>
+
 </body>
 </html>
